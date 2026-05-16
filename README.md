@@ -2,7 +2,7 @@
 
 A RAG (Retrieval-Augmented Generation) chatbot built for Computer Science Engineering students. It answers questions from CSE core subject books using FAISS vector search and Groq's LLaMA 3.1 model, with answers personalized to each student's semester and preferred style.
 
----
+-
 
 ## Features
 
@@ -12,24 +12,24 @@ A RAG (Retrieval-Augmented Generation) chatbot built for Computer Science Engine
 - **Pre-built FAISS index** — no need to re-embed documents on every run
 - **Streamlit UI** — clean, interactive web interface
 
----
+-
 
 ## Books Indexed
 
 | Subject | File |
-|---|---|
+|-|-|
 | Data Structures & Algorithms | `DSA-Book.pdf` |
 | Computer Networks | `CN-Book.pdf` |
 | Computer Graphics | `CG-Book.pdf` |
 | Cloud Computing | `CC-Book.pdf` |
 | Blockchain | `Blockchain-Book.pdf` |
 
----
+-
 
 ## Tech Stack
 
 | Component | Library / Service |
-|---|---|
+|-|-|
 | UI | Streamlit |
 | LLM | Groq — LLaMA 3.1 8B Instant |
 | Embeddings | `sentence-transformers/all-MiniLM-L6-v2` |
@@ -37,7 +37,7 @@ A RAG (Retrieval-Augmented Generation) chatbot built for Computer Science Engine
 | Orchestration | LangChain |
 | PDF Parsing | PyPDF |
 
----
+-
 
 ## Setup
 
@@ -82,7 +82,7 @@ Open and run all cells in `notebook/chatbot.ipynb`. This reads the PDFs from `bo
 streamlit run app.py
 ```
 
----
+-
 
 ## Project Structure
 
@@ -104,7 +104,7 @@ CSE-Chatbot/
     └── chatbot.ipynb       # Index-building notebook
 ```
 
----
+-
 
 ## How It Works
 
@@ -114,7 +114,7 @@ CSE-Chatbot/
 4. The student's profile (name, semester, answer style) is prepended to the query.
 5. Groq's LLaMA 3.1 model generates an answer grounded in the retrieved context.
 
----
+-
 
 ## License
 
